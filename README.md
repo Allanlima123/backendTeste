@@ -32,7 +32,7 @@ Acesse a pasta do XAMPP:
 
 - Execute o comando abaixo no terminal para clonar o repositório diretamente dentro de htdocs:
 
-** git clone <URL_DO_REPOSITORIO> **
+**git clone <URL_DO_REPOSITORIO>**
 
 - O projeto será clonado, por exemplo, em C:\xampp\htdocs\<nome-do-projeto>.
 
