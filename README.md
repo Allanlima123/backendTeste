@@ -59,11 +59,11 @@ Acesse a pasta do XAMPP:
 1. **Acesse o projeto no navegador:**
    - Abra o navegador e digite o endereço:
      ```
-     http://localhost/meu-projeto
+     http://localhost/
      ```
 
 2. **Configuração adicional (se necessário):**
-   - Verifique se o arquivo `config.php` (ou equivalente) contém as configurações corretas para o banco de dados:
+   - Verifique se o arquivo `db.php` (ou equivalente) contém as configurações corretas para o banco de dados:
      ```php
      <?php
      $host = 'localhost';
