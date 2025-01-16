@@ -39,15 +39,15 @@ Acesse a pasta do XAMPP:
 2. **Configuração do banco de dados (MySQL):** 
    - Acesse o MySQL DownLoad em: https://dev.mysql.com/downloads/installer/.
    - Crie um banco de dados:
-     - Clique em "Novo".
-     - Insira o nome do banco de dados (ex.: `create datbase meu_banco`) e clique em "Criar ou no Raio acima na página".
-      CREATE DATABASE meu_banco;
+     - Abra um novo SQLFile ou "File -> New Query Tab".
+     - Insira o nome do banco de dados (ex.: `create database meu_banco`) e clique no Raio acima na página
 
    -- Usar o banco de dados criado
       USE meu_banco;
 
-   -- Criar a tabela `users`
-      CREATE TABLE users (
+   - Insira o nome da tabela do banco de dados e clique no Raio acima na página
+   - ex.:
+   - CREATE TABLE users (
        id INT AUTO_INCREMENT PRIMARY KEY,
        name VARCHAR(255) NOT NULL,
        email VARCHAR(255) UNIQUE NOT NULL,
