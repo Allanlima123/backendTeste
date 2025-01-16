@@ -8,7 +8,7 @@ $input = json_decode(file_get_contents("php://input"), true);
 
 if (!isset($input['id'], $input['name'], $input['email'])) {
     http_response_code(400);
-    echo json_encode(["erro" => "Dados incompletos"]);
+    echo json_encode(["erro" => "Incomplete data"]);
     exit();
 }
 
@@ -20,11 +20,10 @@ try {
 
     if ($user) {
         http_response_code(400);
-        echo json_encode(["erro" => "O e-mail informado já está em uso por outro usuário."]);
+        echo json_encode(["erro" => "The email provided is already in use by another user."]);
         exit();
     }
 
-    // Atualizar o usuário se o e-mail não for duplicado
     $stmt = $pdo->prepare("UPDATE users SET name = :name, email = :email WHERE id = :id");
     $stmt->execute([
         ":name" => $input['name'],
@@ -32,8 +31,8 @@ try {
         ":id" => $input['id']
     ]);
 
-    echo json_encode(["mensagem" => "Usuário atualizado com sucesso!"]);
+    echo json_encode(["message" => "User updated successfully!"]);
 } catch (PDOException $e) {
     http_response_code(500);
-    echo json_encode(["erro" => "Erro ao atualizar usuário: " . $e->getMessage()]);
+    echo json_encode(["erro" => "Error updating user: " . $e-> getMessage()]);
 }
