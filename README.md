@@ -42,20 +42,20 @@ Acesse a pasta do XAMPP:
      - Abra um novo SQLFile ou "File -> New Query Tab".
      - Insira o nome do banco de dados (ex.: `create database meu_banco`) e clique no Raio acima na página
 
-   -- Usar o banco de dados criado
+   - Usar o banco de dados criado
    
-      USE meu_banco;
+      - USE meu_banco;
 
    - Insira o nome da tabela do banco de dados e clique no Raio acima na página
    
-   - ex.:
+      - ex.:
      
-   - CREATE TABLE users (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       name VARCHAR(255) NOT NULL,
-       email VARCHAR(255) UNIQUE NOT NULL,
-       password VARCHAR(255) NOT NULL
-   );
+         CREATE TABLE users (
+             id INT AUTO_INCREMENT PRIMARY KEY,
+             name VARCHAR(255) NOT NULL,
+             email VARCHAR(255) UNIQUE NOT NULL,
+             password VARCHAR(255) NOT NULL
+         );
 
 ## Rodando o Projeto
 
