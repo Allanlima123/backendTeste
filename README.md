@@ -87,9 +87,13 @@ Acesse a pasta do XAMPP:
 ## Recursos Adicionais
 
 - **URLS REQUISIÇÕES:**
-   **POST:** [http://localhost/backendTeste/crud_user/create.php]\n
-   **GET:** [http://localhost/backendTeste/crud_user/get.php]\n
-   **DELETE:** [http://localhost/backendTeste/crud_user/delete.php]\n
+  
+   **POST:** [http://localhost/backendTeste/crud_user/create.php]
+  
+   **GET:** [http://localhost/backendTeste/crud_user/get.php]
+  
+   **DELETE:** [http://localhost/backendTeste/crud_user/delete.php]
+  
    **PUT:** [http://localhost/backendTeste/crud_user/update.php]
 
 - **Documentação do PHP:** [https://www.php.net/docs.php](https://www.php.net/docs.php)
